@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typography Demo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -15,9 +19,10 @@
     <main>
         <h1>Typography demo</h1>
 
-        <section>
-            <h2>Modifying fonts</h2>
-            <p>One of the standout moments from Manoah's season came following a Blue Jays' 
+        
+        <section class="modifying-fonts">
+            <h2 class="modifying-fonts__title">Modifying fonts</h2>
+            <p class="modifying-fonts__description">One of the standout moments from Manoah's season came following a Blue Jays' 
                 loss to the Baltimore Orioles in early September. It was an emotional series 
                 and an emotional game that saw tempers flare between the clubs. 
                 While the Orioles celebrated their triumph on the field on the Tuesday night, 
@@ -28,26 +33,27 @@
                 turn in one of his best outings of the season, tossing eight innings of 
                 three-hit, one-run ball to take the W. The situation reminds Stripling of 
                 what he learned about Michael Jordan by watching the documentary miniseries 
-                The Last Dance. “Manoah was pissed about the loss," says Stripling. “The next 
+                <span class="modifying-fonts__show-title">The Last Dance</span>. “Manoah was pissed about the loss," says Stripling. “The next 
                 day, he goes eight innings. He kind of has like that Jordan quality to him. 
                 If you watch the doc, [Jordan] almost makes up that these young players were 
                 talking smack about him and uses that for motivation. I feel Like Manoah has 
                 that kind of edge to him where he can psych himself up for big situations and 
                 then go perform better because of it."</p>
         </section>
+   
 
-        <!-- <section>
+        <section>
             <h2>Installed Fonts</h2>
             <p>
                 For installed fonts, all you need to do is specify the <code>font-family</code>,
                 for example <code>font-family: 'Comic Sans MS';</code>
             </p>
-            <p>
+            <p class="font-demo font-demo--installed">
                 This text is using a font installed on the user's computer!
             </p>
-        </section> -->
+        </section>
 
-        <!--
+        
         <section>
             <h2>Remotely Hosted Custom Fonts (@font-face)</h2>
             <p>
@@ -65,14 +71,14 @@
                 </code>
             </p>
 
-            <p>
+            <p class="font-demo font-demo--remote">
                 This text is using a remotely hosted font on Google Fonts!
             </p>
         </section>
-        -->
+       
 
 
-        <!-- <section>
+        <section>
             <h2>Locally Hosted Custom Fonts (@font-face)</h2>
             
             <p>To use @font-face, you need to specify at least the following two properties:</p>
@@ -96,16 +102,16 @@
                 Optionally, you can specify the format of the <code>src</code> definition by
                 ending it with <code> format('[FORMAT]')</code>
             </p>
-            <p>Remember to include woff2, woff, and ttf formats for your @font-face rules!</p>
+            <p>Remember to include woff2 and woff formats for your @font-face rules!</p>
 
-            <p>This text is using a locally hosted font!</p>
-            <p>This text is using a locally hosted bold font!</p>
-            <p>This text is using a locally hosted italic font!</p>
-            <p>This text is using a locally hosted bold italic
+            <p class="font-demo__local">This text is using a locally hosted font!</p>
+            <p class="font-demo__local font-demo__local--bold">This text is using a locally hosted bold font!</p>
+            <p class="font-demo__local font-demo__local--italic">This text is using a locally hosted italic font!</p>
+            <p class="font-demo__local font-demo__local--bold-italic">This text is using a locally hosted bold italic
                 font!</p>
-        </section> -->
+        </section>
 
-        <!-- <section>
+        <section>
             <h2>Viewing the Rendered Font</h2>
             <ul>
                 <li>Inspect an element using Dev Tools</li>
@@ -114,7 +120,7 @@
             </ul>
             <a href="https://n8d.at/how-to-identify-the-font-rendered-in-your-browser">How to identify the font rendered
                 in your browser.</a>
-        </section> -->
+        </section>
     </main>
 </body>
 

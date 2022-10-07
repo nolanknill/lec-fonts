@@ -1,1 +1,53 @@
 @use './partials/global';
+@use './partials/typography';
+
+.modifying-fonts {
+    padding: 1rem 3rem;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: normal;
+        letter-spacing: 0.125rem;
+    }
+
+    &__description {
+        line-height: 2;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    &__show-title {
+        font-style: italic;
+    }
+}
+
+.font-demo {
+    &--installed {
+        font-family: "Courier New", Arial;
+    }
+
+    &--remote {
+        font-family: 'Silkscreen', cursive;
+    }
+
+    &__local {
+        font-family: "Roboto";
+        
+        /* For validating Roboto works, add a fallback font! */
+        // font-family: "Roboto", "Comic Sans MS";
+
+        &--bold {
+            font-weight: bold;
+        }
+        
+        &--italic {
+            font-style: italic;
+        }
+
+        &--bold-italic {
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}
